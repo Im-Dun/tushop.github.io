@@ -39,6 +39,9 @@
                     <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('products')">Sản phẩm</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('warranty')">Chính sách bảo hành</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('order')">Đặt hàng & Thanh toán</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="switchToUser()">Chuyển sang User</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -285,6 +288,12 @@
         }
 
         document.addEventListener("DOMContentLoaded", loadProducts);
+
+        function switchToUser() {
+            alert("Chuyển sang giao diện User!");
+            // Chuyển hướng đến trang user.html
+            window.location.href = "user.html"; // Đảm bảo tệp user.html tồn tại
+        }
     </script>
     <!-- Footer -->
 <footer class="bg-light text-dark mt-5 p-4">
